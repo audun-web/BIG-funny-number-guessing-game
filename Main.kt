@@ -32,7 +32,7 @@ fun main() {
         println("\u001B[1m\u001B[33mI picked a number between ${range.first} and ${range.last}. Can you guess it?\u001B[0m")
 
         /* Dev */
-         println(number)
+        // println(number)
 
 
         while (!guessed) {
@@ -55,6 +55,7 @@ fun main() {
             if (attempts % 10 == 0) {
                 println("\u001B[32mYou have used $attempts attempts now")
             }
+
 
             when {
                 guess < number -> println("\u001B[1m\u001B[34mToo low!\u001B[0m")
